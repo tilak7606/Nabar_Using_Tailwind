@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[url('.\img2.jpg')] bg-cover h-screen">
+
+    <header class="bg-[#FFFFFF70] text-white">
+        <nav class="flex items-center justify-between px-12 h-16 lg:gap-8">
+            <a href="https://tailwindcss.com/" class="text-xl font-bold  px-2 py-1 whitespace-nowrap  hover:text-cyan-400 duration-500">
+                <img src="https://imgs.search.brave.com/Z5KzvnbDLcIM0PWp7CcoTA7Rp3go5U8SMilVC0FGycQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9k/L2Q1L1RhaWx3aW5k/X0NTU19Mb2dvLnN2/Zw" class="inline h-5" alt="img">
+                TailwindCss</a>
+
+            <div class="dropdown-menu absolute -top-full left-0 max-lg:bg-[#FFFFFF30] w-full flex flex-col gap-6 items-center py-2 font-bold text-lg lg:static lg:flex-row lg:justify-between">
+                <ul class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8 lg:justify-center mx-80">
+                    <li class="hover:text-orange-400 cursor-pointer">Home</li>
+                    <li class="hover:text-orange-400 cursor-pointer">help</li>
+                    <li class="hover:text-orange-400 cursor-pointer">about</li>
+                    <li class="hover:text-orange-400 cursor-pointer">blog</li>
+                    <li class="hover:text-orange-400 cursor-pointer">about us</li>
+                    
+                </ul>
+                <div class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8">
+                    <button class="hover:text-orange-400 bg-cyan-500 rounded-md px-2 py-1" >login</button>
+                    <button class="bg-cyan-500 rounded-md px-2 py-1 whitespace-nowrap duration-1000 hover:text-orange-400  ">sign up</button>
+                </div>
+            </div >
+            <div class="toggle-btn lg:hidden">
+                <i class="fa-solid fa-bars fa-lg cursor-pointer hover:text-cyan-400 duration-500"></i>
+                
+            </div>
+
+         
+        </nav>
+    </header>
+
+   <script>
+    const toggleBtn = document.querySelector(".toggle-btn");
+    const dropdown = document.querySelector(".dropdown-menu");
+    
+    toggleBtn.addEventListener("click",() => {
+        dropdown.classList.toggle('top-16');
+    })
+   </script>
+
+   <main>
+    <div class="flex h-screen justify-center items-center">
+   <span class="text-zinc-300 text-9xl  font-serif hover:text-cyan-400 duration-500 cursor-progress">The Tilak</span>
+</div>
+   </main>
+    
+</body>
+</html>
